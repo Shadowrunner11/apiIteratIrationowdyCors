@@ -1,4 +1,3 @@
-import {} from 'dotenv/config'
 import mongoose from "mongoose";
 
 const conn = async ()=>{
