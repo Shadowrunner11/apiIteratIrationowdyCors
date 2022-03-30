@@ -4,7 +4,7 @@ import conn from '../services/database.js'
 
 export const fast = fastify({logger:true})
 
-fast.get('/', ()=>{
+fast.get('/', async ()=>{
     return 'Bye mundo'
 })
 
@@ -17,7 +17,7 @@ fast.post('/api/person', async (request, reply)=>{
         conexion.close()
         return data
     } catch (error) {
-        fast.log.info(error)
+        fast.log.error(error)
         return error
     }
     
