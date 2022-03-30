@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "fastify": "^3.27.4",
+    "mongoose": "^6.2.9"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --timeout 30000",
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "axios": "^0.26.1",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "nodemon": "^2.0.15"
+  }
+}
