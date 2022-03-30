@@ -1,7 +1,8 @@
 
 import fastify from 'fastify'
-import Person from './src/models/Persona'
-import conn from './src/services/database'
+import Person from './src/models/Persona.js'
+import start from './src/services/api.js'
+import conn from './src/services/database.js'
 
 
 export const fast = fastify({logger:true})
