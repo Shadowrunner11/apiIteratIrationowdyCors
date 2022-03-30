@@ -4,7 +4,7 @@ import conn from '../services/database.js'
 
 export const fast = fastify({logger:true})
 
-fast.get('/', async ()=>{
+fast.get('/', async (request,reply)=>{
     return 'Bye mundo'
 })
 
