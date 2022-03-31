@@ -6,7 +6,7 @@ const should = chai.should()
 
 describe('Test api', ()=>{
     it('post api',async ()=>{
-        const response = await axios.post('http://localhost:3000/api/person',{
+        const response = await axios.post('http://localhost:5000/api/person',{
            name: 'fake name' ,
            education: [{institution: 'fake institution'}]
         })

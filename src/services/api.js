@@ -1,13 +1,11 @@
 import { fast } from "../routes/endpoint.js";
 
-const start = async ()=>{
+const start = async () =>{
     try {
-        await fast.listen(process.env.PORT,'0.0.0.0')
-        console.log(process.env.MONGODB_ADDON_URI)
+        await fast.listen(process.env.PORT | 5000)
         
     } catch (error) {
-        fast.log.error(error)
-        process.exit(1)
+       fast.log.error(error) 
     }
 }
 
