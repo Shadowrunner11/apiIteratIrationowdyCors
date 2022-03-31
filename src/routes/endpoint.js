@@ -1,9 +1,15 @@
 import fastify from "fastify";
+import fastifyCors from "fastify-cors";
 import Person from "../models/Person.js";
 import db from "../services/database.js";
 
 
 export const fast = fastify({logger:true})
+
+fast.register(fastifyCors, {
+    origin:['https://apirowdy.herokuapp.com/'],
+    methods:['POST', 'GET']
+})
 
 fast.get('/',  (request, response)=>{
     response.type('text/html').send('<div>Bye mundo</div>')
