@@ -7,7 +7,7 @@ import db from "../services/database.js";
 export const fast = fastify({logger:true})
 
 fast.register(fastifyCors, {
-    origin:['https://apirowdy.herokuapp.com/'],
+    origin:['https://apirowdy.herokuapp.com/api/post'],
     methods:['POST', 'GET']
 })
 
