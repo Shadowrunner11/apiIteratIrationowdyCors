@@ -7,7 +7,7 @@ import db from "../services/database.js";
 export const fast = fastify({logger:true})
 
 fast.register(fastifyCors, {
-    origin:['*'],
+    origin:'https://create-react-app-eight-azure-31.vercel.app/',
     methods:['POST', 'GET']
 })
 
